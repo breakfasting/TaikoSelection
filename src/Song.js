@@ -6,7 +6,7 @@ class Song extends Component {
   render() {
     return (
       <div className={(this.props.current) ? 'current song mx-2' : 'song mx-2'} >
-        <div className="card">
+        <div className="card shadow">
           <img className="card-img-top" src={this.props.cover} alt={this.props.title} />
           <div className="card-body text-center">
             <h5 className="card-title text-nowrap text-truncate">{this.props.title}</h5>
